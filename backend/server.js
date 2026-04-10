@@ -94,7 +94,11 @@ app.get("/api/health", (req, res) => {
 });
 
 // ── Start Server ─────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`\n🚀 Supply Chain Analyst API running on http://localhost:${PORT}`);
-  console.log(`   Health check: http://localhost:${PORT}/api/health\n`);
-});
+if (process.env.VERCEL !== "1") {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 Supply Chain Analyst API running on http://localhost:${PORT}`);
+    console.log(`   Health check: http://localhost:${PORT}/api/health\n`);
+  });
+}
+
+export default app;
