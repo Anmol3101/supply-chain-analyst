@@ -1,0 +1,30 @@
+{
+  "name": "supply-chain-analyst",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Supply Chain Network Analyst — Full-stack optimization with Claude AI",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node backend/server.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "recharts": "^2.12.0",
+    "framer-motion": "^11.0.0",
+    "xlsx": "^0.18.5",
+    "lucide-react": "^0.344.0",
+    "@anthropic-ai/sdk": "^0.24.0",
+    "pg": "^8.11.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "@vitejs/plugin-react": "^4.2.0"
+  }
+}
